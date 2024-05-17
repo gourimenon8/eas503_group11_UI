@@ -23,4 +23,4 @@ if st.button('Predict Salary'):
     response = requests.post('http://174.138.82.208:8080/predict', json=inputs)
     prediction = response.json()
     
-    st.write('The predicted salary is:', prediction['salary'])  
+    st.write('The predicted salary is:', prediction['prediction'])  
