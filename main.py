@@ -20,7 +20,7 @@ for key in input_sample.keys():
   inputs[key] = st.text_input(key, input_sample[key])
 
 if st.button('Predict Salary'):
-    response = requests.post('http://174.138.82.208:8080/predict', json=inputs)
+    response = requests.post('http://143.198.4.207:8080/predict', json=inputs)
     prediction = response.json()
     
     st.write('The predicted salary is:', prediction['prediction'])  
